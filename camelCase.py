@@ -1,7 +1,16 @@
 # small program to change a sentence to camel case.
 
 
+def display_banner():
+    '''Display program name in a banner'''
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' * len(msg)
+    print('\n', stars, '\n', msg, '\n',  stars, '\n')
+
+
 def main():
+    display_banner()
+
     preformat = input("type a sentence to format ")
     formatting = preformat.split()
     formattedString = formatting[0]
