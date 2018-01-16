@@ -8,10 +8,14 @@ def display_banner():
     print('\n', stars, '\n', msg, '\n',  stars, '\n')
 
 
+def instructions():
+    print("please enter a sentence to convert to camelCase.\n")
+
+
 def main():
     display_banner()
-
-    preformat = input("type a sentence to format ")
+    instructions()
+    preformat = input()
     formatting = preformat.split()
     formattedString = formatting[0]
 
